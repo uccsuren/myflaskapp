@@ -7,5 +7,9 @@ app = Flask(__name__)
 def hello():
     return "Hello from Python on Render!"
 
+@app.route("/welcome")
+def hai():
+    return "welcome"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
